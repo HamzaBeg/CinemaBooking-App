@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HamzaBeganovicRMALab.Login"
+             BackgroundColor="#112B47">
+    <ContentPage.Content>
+        <ScrollView HeightRequest="3000">
+            <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                <Label VerticalOptions="Center"  FontSize="20" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold">Dobrodosli</Label>
+                <Label HorizontalOptions="CenterAndExpand" FontSize="24" TextColor="White" Margin="10">Cinema booking</Label>
+                <Image Source="hgILIL7X_400x400.jpeg" WidthRequest="100" HeightRequest="250" ></Image>
+                <Label  Margin="0,20,0,0"  FontSize="23" TextColor="white" FontAttributes="Bold">Unesite podatke za login: </Label>
+                <Entry x:Name="txtUsername" Placeholder="Korisnicko ime" TextColor="White" PlaceholderColor="White"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Sifra" IsPassword="True" TextColor="White" PlaceholderColor="White"></Entry>
+            <Button
+                VerticalOptions="Center"
+                Text="Login"
+                TextColor="White"
+                BackgroundColor="Green"
+                BorderColor="DarkBlue"
+               
+                CornerRadius="40"
+                Margin="0,20"
+                Clicked="Button_Clicked"
+            >
+            </Button>
+            <Label VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" TextColor="Red">Dont have an account?</Label>
+            <Button
+                VerticalOptions="Center"
+                Text="Register"
+                TextColor="White"
+                BackgroundColor="DarkRed"
+                Margin="0,20"
+                CornerRadius="40"
+                Clicked="Button_Clicked_1"
+            >
+            </Button>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

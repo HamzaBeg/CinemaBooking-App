@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HamzaBeganovicRMALab.Registration"
+             BackgroundColor="#112B47">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center"  HorizontalOptions="FillAndExpand" Margin="40">
+            <Label HorizontalOptions="CenterAndExpand" FontSize="24" TextColor="White" Margin="20">Unesite svoje podatke</Label>
+            <Entry x:Name="txtName" Placeholder="Ime" TextColor="White" PlaceholderColor="White"></Entry>
+            <Entry x:Name="txtSurname" Placeholder="Prezime" TextColor="White" PlaceholderColor="White"></Entry>
+            <Entry x:Name="txtUserName" Placeholder="Korisnicko ime" TextColor="White" PlaceholderColor="White"></Entry>
+            <Entry x:Name="txtRegisterPassword1" Placeholder="Sifra" IsPassword="True" TextColor="White" PlaceholderColor="White"></Entry>
+            <Entry x:Name="txtRegisterPassword2" Placeholder="Ponovite sifru" IsPassword="True" TextColor="White" PlaceholderColor="White"></Entry>
+            <Button
+                Margin="20"
+                VerticalOptions="Center"
+                Text="Register"
+                TextColor="White"
+                BackgroundColor="Aqua"
+                CornerRadius="40"
+                Clicked="Button_Clicked"
+            >
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

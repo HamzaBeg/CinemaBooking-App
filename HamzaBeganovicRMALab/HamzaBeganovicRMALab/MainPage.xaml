@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HamzaBeganovicRMALab.MainPage"
+             Background="#112B47">
+
+    <ContentPage.Content>
+        <ScrollView HeightRequest="3000">
+            <StackLayout Orientation="Vertical">
+                <CollectionView  x:Name="ListMovies"
+                                 ItemsSource="{Binding MyListMovies}" SelectionMode="Single" >
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame BackgroundColor="#112B47" Margin="0,10,0,10" HeightRequest="540" BorderColor="Green" >
+                                <StackLayout VerticalOptions="Center">
+                                    <Image Source="{Binding Image}" WidthRequest="150" HeightRequest="200" Margin="0,10,0,10"></Image>
+                                    <Label Text="{Binding Naziv}" Font="Bold" FontSize="20" TextColor="White" VerticalOptions="Center" VerticalTextAlignment="Center"/>
+
+                                    <StackLayout Orientation="Horizontal" >
+                                        <Label TextColor="White"> Imdb Ocjena:</Label>
+                                        <Label Text="{Binding Ocjena}" TextColor="White"/>
+                                    </StackLayout>
+                                    <Label Margin="0,10,0,0" TextColor="White">Kratak opis: </Label>
+                                    <Label Margin="0,0,0,10" TextColor="White" Text="{Binding Opis}"/>
+                                    <Button
+                                        VerticalOptions="Center"
+                                        Text="Bukiraj"
+                                        TextColor="White"
+                                        BackgroundColor="Green"
+                                        BorderColor="DarkBlue"
+                                        CornerRadius="40"
+                                        Margin="40,10"
+                                        Clicked="Button_Clicked">
+                                    </Button>
+
+
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

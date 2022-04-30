@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HamzaBeganovicRMALab.FlyoutPage1Detail"
+             Title="Detail"
+             Background="#112B47">
+    <ScrollView HeightRequest="3000">
+        <StackLayout>
+            <Label Margin="0,30,0,10" HorizontalOptions="Center" TextColor="#112B47" FontSize="20"
+                   FontAttributes="Bold" BackgroundColor="LightBlue" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" 
+                   VerticalOptions="FillAndExpand" HeightRequest="40" WidthRequest="250">Cinema booking</Label>
+            <Image Source="slikaC.jpg" Margin="0,0,0,10"  HorizontalOptions="FillAndExpand" WidthRequest="100" HeightRequest="200" ></Image>
+            <Label HorizontalOptions="StartAndExpand" Margin="20,10" TextColor="white" FontSize="20">Odaberite opciju:</Label>
+            <Button Text="Lista filmova" Margin="40,10" BackgroundColor="LightBlue" TextColor="#112B47" FontAttributes="Bold"  CornerRadius="40" Clicked="Button_Clicked"></Button>
+            <Button Text="Bukiraj mjesto" Margin="40,10" BackgroundColor="LightBlue" TextColor="#112B47" FontAttributes="Bold"  CornerRadius="40" Clicked="Button_Clicked_1"></Button>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
